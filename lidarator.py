@@ -110,6 +110,7 @@ if __name__ == "__main__":
 	if log==1:
 		print(threadlog, "Iniciando servidor...")
 
+	# Comandos y respuestas posibles
 
 	class Command:
 
@@ -119,6 +120,7 @@ if __name__ == "__main__":
 
 		RES_OK, RES_FAIL, HEALTH_OK, HEALTH_BAD = (1001, 1002,2001, 2002)
 
+	# Preparar socket de conexion
 	
 	commsock = socket.socket(family=socket.AF_INET, type=socket.SOCK_STREAM)
 
@@ -421,24 +423,3 @@ if __name__ == "__main__":
 
 			continue
 
-
-				#break;
-		# except Exception as e:
-
-		# 	exc_type, exc_obj, exc_tb = sys.exc_info()
-
-		# 	print(threadcritical,"Error en el servidor:",e,str(e))
-		# 	fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
-		# 	print(exc_type, fname, exc_tb.tb_lineno)
-
-		# 	client_sock.shutdown(socket.SHUT_RDWR)
-		# 	client_sock.close()
-		# 	commsock.shutdown(socket.SHUT_RDWR)
-		# 	commsock.close()
-
-				
-		# finally:
-		# 	client_sock.shutdown(socket.SHUT_RDWR)
-		# 	client_sock.close()
-		# 	commsock.shutdown(socket.SHUT_RDWR)
-		# 	commsock.close()

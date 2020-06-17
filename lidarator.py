@@ -82,6 +82,8 @@ def ctrlz_exit(sig, frame):
 		print(threadend,'Cierre completado')
 	os._exit(1)
 
+	
+# TODO: documentación general de esta clase: proceso general, utilidad, cómo acceder a los datos, etc.
 if __name__ == "__main__":
 
 	threadlog = colors.fg.violet+threading.currentThread().getName()+" LOG:"+colors.end
